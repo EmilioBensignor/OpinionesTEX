@@ -400,7 +400,7 @@ const reviews2 = [
   },
   {
     location: "Roma, Italia",
-    tour: "Tutta Italia", 
+    tour: "Tutta Italia",
     title: "Italia como una gran familia",
     review: "Venecia fue una joya, pero mi parada favorita fue Roma y su Trastevere, increíble éxito. La comida italiana es de primera, y todo el tour se sentía como una gran familia.",
     stars: 4,
@@ -412,7 +412,7 @@ const reviews2 = [
     tour: "Tutta Italia",
     title: "Un recorrido sin igual",
     review: "El ambiente de Perugia me encantó, el sabor del chocolate italiano. La organización es excelente, todo estuvo a tiempo, nada se retrasó, ningún problema. Tour 5/5",
-    stars: 5, 
+    stars: 5,
     name: "Octavio Dalmasso Cagnoli",
     image: "Octavio-Dalmasso-Cagnoli"
   },
@@ -930,7 +930,7 @@ $(document).ready(function () {
       {
         breakpoint: 319,
         settings: {
-          slidesToShow: 1
+          slidesToShow: 1,
         }
       },
       {
@@ -955,9 +955,8 @@ $(document).ready(function () {
         breakpoint: 991,
         settings: {
           slidesToShow: 4,
-          centerMode: !1,
-          variableWidth: !1,
-          centerPadding: '100px',
+          centerMode: false,
+          variableWidth: false,
           arrows: true,
           swipe: false,
           prevArrow: "<img class='prev-webinar arrows-webinar slick-prev' src='/content/img/home/prev-arrow-oferta.svg'/>",
@@ -967,3 +966,29 @@ $(document).ready(function () {
     ],
   });
 });
+
+const sliderNovedades = document.querySelectorAll('.sliderNovedades');
+sliderNovedades.forEach(slider => {
+  const imgNovDeskElements = slider.querySelectorAll('.imgNovDesk');
+  imgNovDeskElements.forEach(element => {
+    element.remove();
+  });
+});
+
+function adjustOfertasWidth() {
+  const ofertasEspeciales = document.getElementById('ofertas-especiales');
+  const ofertasSlides = document.querySelectorAll('.ofertas-slider .slide');
+
+  if (window.innerWidth >= 1080) {
+    const containerWidth = ofertasEspeciales.offsetWidth;
+    const slideWidth = (containerWidth / 4) - 20;
+
+    ofertasSlides.forEach(slide => {
+      slide.style.width = `${slideWidth}px`;
+      slide.style.maxWidth = `${slideWidth}px`;
+    });
+  }
+}
+
+window.addEventListener('resize', adjustOfertasWidth);
+document.addEventListener('DOMContentLoaded', adjustOfertasWidth);

@@ -254,6 +254,8 @@ ol.breadcrumb {
 }
 
 .review-card {
+  display: flex;
+  flex-direction: column;
   background: #f1f1f1;
   border-radius: 18px;
   box-shadow: 0px 1px 3px 0px #00000040;
@@ -411,7 +413,7 @@ ol.breadcrumb {
   padding: 1.75rem 0 1.75rem 0;
 }
 
-.body-card-novedades .imgNovDesk{
+.body-card-novedades .imgNovDesk {
   display: none !important;
 }
 
@@ -760,6 +762,10 @@ a[href^="tel:"] {
     width: 48%;
   }
 
+  .review-body {
+    height: 60%;
+  }
+
   .body-card-novedades {
     padding: 1.75rem 1rem;
   }
@@ -794,7 +800,7 @@ a[href^="tel:"] {
     margin-bottom: 1rem;
   }
 
-  .review-content{
+  .review-content {
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -874,7 +880,7 @@ a[href^="tel:"] {
   }
 }
 
-@media (min-width: 970px){
+@media (min-width: 970px) {
   #reviews-container {
     height: 2400px;
   }
@@ -888,9 +894,11 @@ a[href^="tel:"] {
   #ofertas-especiales .slick-slider .slick-list {
     transform: translate(0);
     overflow: hidden !important;
+    padding-bottom: 5px;
   }
 
-  .slick-prev, .slick-next {
+  .slick-prev,
+  .slick-next {
     z-index: 5;
   }
 }
