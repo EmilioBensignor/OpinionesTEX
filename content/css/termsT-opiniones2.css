@@ -1,0 +1,317 @@
+body,
+body[data-entorno="tourexperto.com"] {
+  --url-icono-ubicacion: url(/content/img/opiniones/icono-ubicacion.webp)
+}
+
+body {
+  --url-ofertas: url(/content/img/home/ofertas-para-ti-OPT.webp);
+  --url-sprite_header: url(/content/img/shared/sprite_header.webp);
+  --url-sprite_footer: url(/content/img/shared/sprite_footer.svg);
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: Raleway, sans-serif
+}
+
+body[data-entorno="tourexperto.com"] {
+  --url-ofertas: url(//imagenes.tourexperto.com/content/img/home/ofertas-para-ti-OPT.webp);
+  --url-sprite_header: url(//imagenes.tourexperto.com/content/img/shared/sprite_header.webp);
+  --url-sprite_footer: url(//imagenes.tourexperto.com/content/img/shared/sprite_footer.svg)
+}
+
+/*version desktop*/
+/*sector sitios de viaje*/
+
+.body-opiniones {
+  padding: 0 50px;
+}
+
+#plataformas-opiniones {
+  width: 100%;
+}
+
+.sitios-opiniones-viajeras h1 {
+  font-size: 26px;
+}
+
+.sitios-opiniones-viajeras .row-plataformas-viajeras {
+  width: 100%;
+  gap: unset;
+  justify-content: space-evenly;
+  padding-bottom: 4rem;
+}
+
+.sitios-opiniones-viajeras .row-plataformas-viajeras .sitio-viajero {
+  padding: 20px 22px;
+}
+
+.sitio-viajero img {
+  height: 38px;
+}
+
+/*sector opiniones calificadas*/
+.arribaDesktop {
+  flex-direction: row;
+}
+
+.columnaIzqDesktop {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+#opiniones-calificadas {
+  height: max-content;
+  gap: 1rem;
+}
+
+#opiniones-calificadas h2 {
+  font-size: 22px;
+}
+
+#opiniones-calificadas .promedio p {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+#opiniones-calificadas .categorias,
+#opiniones-calificadas .categorias .categoria {
+  gap: 0.875rem;
+}
+
+.categoria p {
+  font-size: 16px;
+  width: 90px;
+  font-weight: 600;
+}
+
+#opiniones-calificadas .circulos {
+  gap: 4px;
+}
+
+.circulos img {
+  width: 16px
+}
+
+/*group cards reviews de viaje*/
+
+#reviews-container {
+  height: 3000px;
+  gap: 20px;
+}
+
+/*sector card contacto solo en desktop*/
+.medios-de-contacto .card-contacto {
+  width: 343px;
+  height: auto;
+  border-radius: 18px;
+  padding: 24px;
+  box-shadow: 0 0 3px 0 #00000040;
+  background-color: #fbf9f9
+}
+
+.medios-de-contacto .card-contacto .card-title h5 {
+  color: #6759f9;
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 12px;
+  margin-top: 0
+}
+
+.medios-de-contacto .card-contacto .card-body ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.medios-de-contacto .card-contacto .card-body ul li {
+  font-size: 16px;
+  font-weight: 500;
+  padding-bottom: 8px
+}
+
+.medios-de-contacto .card-contacto .card-body img {
+  width: 1.1rem;
+  margin-right: 10px;
+  vertical-align: middle
+}
+
+.medios-de-contacto .card-contacto .card-body ul li:last-child {
+  margin-bottom: 24px
+}
+
+.medios-de-contacto .card-contacto .card-body ul li a {
+  text-decoration: underline;
+  color: black;
+  font-size: 16px;
+  font-weight: 500
+}
+
+.medios-de-contacto .card-contacto .card-footer .group-social-media {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center
+}
+
+.medios-de-contacto .card-contacto .card-footer .group-social-media a {
+  padding: 0;
+  margin: 0 8px 0 0;
+  background-color: #6c58fe;
+  border-radius: 6px;
+  width: 34px;
+  height: 34px
+}
+
+.medios-de-contacto .card-contacto .card-footer .group-social-media a:link {
+  color: #2e0049;
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none
+}
+
+.redes_sociales.redes-background {
+  background: var(--url-sprite_footer) no-repeat;
+  background-size: 290px 230px
+}
+
+a.redes_instagram.redes-background {
+  background-position: 500px -110px
+}
+
+.medios-de-contacto {
+  display: block
+}
+
+/*sector novedades card en desktop y carousel en mobile*/
+#novedades {
+  display: none
+}
+
+.sliderNovedades .imgNovMob{
+  display: none !important;
+}
+
+.novedadesDesktop {
+  display: flex;
+}
+
+.body-card-novedades {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/*sector botón cargar más*/
+.sector-btn {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 32px;
+  margin-top: 32px
+}
+
+/*sector OFERTAS ESPECIALES*/
+#ofertas-especiales {
+  height: 340px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 18px;
+  background-image: var(--url-ofertas);
+  background-position: center top;
+  margin: 3rem 50px;
+  padding: 40px 40px 0 40px;
+}
+
+.ofertas-subtitle {
+  margin-bottom: 1.5rem;
+}
+
+#ofertas-especiales .btn-ver-tours {
+  width: fit-content;
+  font-weight: 600;
+}
+
+.ofertas-slider {
+  bottom: -32px;
+}
+
+.ofertas-slider .slide {
+  max-width: 230px !important;
+}
+
+/* CARDS 2 */
+
+#group-cards-2 .review-card {
+  width: 32%;
+  margin-bottom: 20px;
+}
+
+/*  VENTANA POPUP para TELÉFONOS y WAPP de header, footer y body*/
+a[href^="tel:"] {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+@media (min-width: 1240px) {
+  .body-opiniones {
+    padding: 0 90px;
+  }
+
+  .sitio-viajero img {
+    height: 40px;
+  }
+
+  .sitios-opiniones-viajeras .row-plataformas-viajeras .sitio-viajero {
+    padding: 20px 30px;
+  }
+
+  #reviews-container {
+    height: 2800px;
+  }
+
+  #ofertas-especiales {
+    margin: 3rem 90px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .body-opiniones {
+    padding: 0 105px;
+  }
+
+  .sitio-viajero img {
+    height: 44px;
+  }
+
+  .sitios-opiniones-viajeras .row-plataformas-viajeras .sitio-viajero {
+    padding: 20px 36px;
+  }
+
+  #reviews-container {
+    height: 2600px;
+  }
+
+  #ofertas-especiales {
+    margin: 3rem 105px;
+  }
+}
+
+@media (min-width: 1495px) {
+  main {
+    max-width: 1495px;
+    margin: 0 auto;
+  }
+
+  .body-opiniones {
+    padding: 0 112px;
+  }
+
+  #ofertas-especiales {
+    margin: 3rem 112px;
+  }
+}
