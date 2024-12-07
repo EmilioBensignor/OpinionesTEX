@@ -954,11 +954,23 @@ $(document).ready(function () {
       {
         breakpoint: 991,
         settings: {
-          slidesToShow: 4,
+          slidesToShow: 3.9,
+          slidesToScroll: 1,
           centerMode: false,
           variableWidth: false,
           arrows: true,
-          swipe: false,
+          prevArrow: "<img class='prev-webinar arrows-webinar slick-prev' src='/content/img/home/prev-arrow-oferta.svg'/>",
+          nextArrow: "<img class='next-webinar arrows-webinar slick-next' src='/content/img/home/next-arrow-webinar.svg'/>",
+        }
+      },
+      {
+        breakpoint: 1080,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          centerMode: false,
+          variableWidth: false,
+          arrows: true,
           prevArrow: "<img class='prev-webinar arrows-webinar slick-prev' src='/content/img/home/prev-arrow-oferta.svg'/>",
           nextArrow: "<img class='next-webinar arrows-webinar slick-next' src='/content/img/home/next-arrow-webinar.svg'/>",
         }

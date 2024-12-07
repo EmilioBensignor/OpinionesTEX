@@ -897,6 +897,11 @@ a[href^="tel:"] {
     padding-bottom: 5px;
   }
 
+  #ofertas-especiales .slick-slider .slick-list .slick-slide {
+    width: 100% !important;
+    max-width: 14% !important;
+  }
+
   .slick-prev,
   .slick-next {
     z-index: 5;

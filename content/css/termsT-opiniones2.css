@@ -216,9 +216,11 @@ a.redes_instagram.redes-background {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  position: relative;
   border-radius: 18px;
   background-image: var(--url-ofertas);
   background-position: center top;
+  overflow-x: clip;
   margin: 3rem 50px;
   padding: 40px 40px 0 40px;
 }
@@ -244,6 +246,25 @@ a.redes_instagram.redes-background {
 .card-oferta {
   width: 100%;
   height: 100%;
+}
+
+#ofertas-especiales .slick-track {
+  max-width: 3200px !important;
+}
+
+#ofertas-especiales .slick-slider .slick-list .slick-slide {
+  width: 7.25% !important;
+  max-width: 7.25% !important;
+}
+
+#ofertas-especiales .slick-arrow.slick-next {
+  right: 0;
+  display: block; /* Ensure the next arrow is displayed */
+}
+
+#ofertas-especiales .slick-arrow.slick-prev {
+  left: 0;
+  display: block; /* Ensure the prev arrow is displayed */
 }
 
 /* CARDS 2 */
